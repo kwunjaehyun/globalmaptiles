@@ -15,17 +15,14 @@ type globalMercator struct {
 	originShift float64
 }
 
-var instance globalMercator
+var GlobalMercator globalMercator
 
 func init() {
-	instance = globalMercator{TILESIZE, PI2 * float64(RADIUS) / float64(TILESIZE), PI2 * float64(RADIUS)/2}
+	GlobalMercator = globalMercator{TILESIZE, PI2 * float64(RADIUS) / float64(TILESIZE), PI2 * float64(RADIUS)/2}
 }
 
-func GetInstance() globalMercator {
-	return instance
-}
 
-func (gm globalMercator) Println (){
+func (gm globalMercator) Public (){
 	fmt.Println(gm.tileSize)
 	fmt.Println(gm.initialResolution)
 	fmt.Println(gm.originShift)
