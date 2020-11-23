@@ -1,12 +1,16 @@
 package globalmaptiles
 
 
-type globalGeodetic struct {
+type GlobalGeodetic struct {
 	tileSize int
 }
 
-var GlobalGeodetic globalGeodetic
+var globalGeodetic GlobalGeodetic
 
 func init() {
-	GlobalGeodetic = globalGeodetic{TILESIZE}
+	globalGeodetic = GlobalGeodetic{TILESIZE}
+}
+
+func getGlobalGeodetic() GlobalGeodetic{
+	return globalGeodetic
 }
