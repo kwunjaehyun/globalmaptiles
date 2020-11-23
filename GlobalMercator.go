@@ -26,7 +26,7 @@ func GetGlobalMercator() GlobalMercator{
 }
 
 
-func (gm GlobalMercator) Public (){
+func (gm *GlobalMercator) PrintGmMember(){
 	fmt.Println(gm.tileSize)
 	fmt.Println(gm.initialResolution)
 	fmt.Println(gm.originShift)
