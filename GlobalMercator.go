@@ -21,7 +21,7 @@ func init() {
 	globalMercator = GlobalMercator{TILESIZE, PI2 * float64(RADIUS) / float64(TILESIZE), PI2 * float64(RADIUS)/2}
 }
 
-func getGlobalMercator() GlobalMercator{
+func GetGlobalMercator() GlobalMercator{
 	return globalMercator
 }
 

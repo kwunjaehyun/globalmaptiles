@@ -11,6 +11,6 @@ func init() {
 	globalGeodetic = GlobalGeodetic{TILESIZE}
 }
 
-func getGlobalGeodetic() GlobalGeodetic{
+func GetGlobalGeodetic() GlobalGeodetic{
 	return globalGeodetic
 }
