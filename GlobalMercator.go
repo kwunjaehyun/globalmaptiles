@@ -25,7 +25,7 @@ func GetInstance() globalMercator {
 	return instance
 }
 
-func (gm globalMercator) Test (){
+func (gm globalMercator) Println (){
 	fmt.Println(gm.tileSize)
 	fmt.Println(gm.initialResolution)
 	fmt.Println(gm.originShift)
