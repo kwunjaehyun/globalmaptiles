@@ -6,7 +6,6 @@ type GlobalGeodetic struct {
 	tileSize int
 }
 
-var TILESIZE = 256
 var defaultGlobalGeodetic GlobalGeodetic
 
 func (gd *GlobalGeodetic) LatLonToPixel(latitude float64, longitude float64, zoom int) (float64, float64) {
@@ -42,7 +41,7 @@ func (gd *GlobalGeodetic) getTileBound(tx int, ty int, zoom int) (float64, float
 }
 
 func init() {
-	defaultGlobalGeodetic = GlobalGeodetic{TILESIZE}
+	defaultGlobalGeodetic = GlobalGeodetic{256}
 }
 
 func GetDefaultGlobalGeodetic() GlobalGeodetic {
